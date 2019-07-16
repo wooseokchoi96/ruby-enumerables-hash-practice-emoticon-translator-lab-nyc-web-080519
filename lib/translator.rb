@@ -4,6 +4,7 @@ require "yaml"
 def load_library(file_name)
   # code goes here
   library = YAML.load_file(file_name)
+  translator = {get_meaning: {}, get_emoticon: {}}
   
 end
 
