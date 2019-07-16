@@ -8,10 +8,10 @@ def load_library(file_name)
     pic.each{ |eng, jap|
       new_emotes = {
         get_meaning = {
-          
+          jap: word
         },
         get_emoticon = {
-      
+          eng: 
         }
       }
     }
