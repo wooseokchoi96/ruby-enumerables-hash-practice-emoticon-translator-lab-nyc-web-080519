@@ -15,7 +15,10 @@ end
 def get_japanese_emoticon(file_name, emoticon)
   # code goes here
   translator = load_library(file_name)
-  translator["get_emoticon"][]
+  if !translator["get_emoticon"][emoticon].nil?
+    translator["get_emoticon"][emoticon]
+  else
+    return "Sorry, that emoticon is not recognized."
 end
 
 def get_english_meaning
