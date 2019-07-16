@@ -6,7 +6,8 @@ def load_library(file_name)
   library = YAML.load_file(file_name)
   translator = {get_meaning: {}, get_emoticon: {}}
   library.each{ |meaning, emotes|
-  
+    translator[:get_meaning][emotes[1]] = meaning
+    translator[:get_emoticon][emotes[0]] = 
     
   }
 end
