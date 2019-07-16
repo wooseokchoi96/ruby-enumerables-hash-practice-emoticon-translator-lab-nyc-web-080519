@@ -11,7 +11,7 @@ def load_library(file_name)
           jap: word
         },
         get_emoticon = {
-          eng: 
+          eng: jap
         }
       }
     }
