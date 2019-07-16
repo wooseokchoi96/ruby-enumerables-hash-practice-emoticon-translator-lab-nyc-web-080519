@@ -19,6 +19,7 @@ def get_japanese_emoticon(file_name, emoticon)
     translator["get_emoticon"][emoticon]
   else
     return "Sorry, that emoticon is not recognized."
+  end
 end
 
 def get_english_meaning
