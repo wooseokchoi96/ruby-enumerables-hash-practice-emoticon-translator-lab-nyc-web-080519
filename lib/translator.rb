@@ -16,6 +16,7 @@ def load_library(file_name)
       }
     }
   }
+  new_emotes
 end
 
 def get_japanese_emoticon
