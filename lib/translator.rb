@@ -12,8 +12,10 @@ def load_library(file_name)
   translator
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_name, emoticon)
   # code goes here
+  translator = load_library(file_name)
+  translator["get_emoticon"][]
 end
 
 def get_english_meaning
