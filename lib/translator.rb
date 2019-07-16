@@ -4,19 +4,7 @@ require "yaml"
 def load_library(file_name)
   # code goes here
   library = YAML.load_file(file_name)
-  emotes.each{ |word, pic|
-    pic.each{ |eng, jap|
-      new_emotes = {
-        get_meaning: {
-          jap: word
-        },
-        get_emoticon: {
-          eng: jap
-        }
-      }
-    }
-  }
-  new_emotes
+  
 end
 
 def get_japanese_emoticon
