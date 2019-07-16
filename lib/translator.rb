@@ -5,7 +5,10 @@ def load_library(file_name)
   # code goes here
   library = YAML.load_file(file_name)
   translator = {get_meaning: {}, get_emoticon: {}}
+  library.each{ |meaning, emotes|
   
+    
+  }
 end
 
 def get_japanese_emoticon
