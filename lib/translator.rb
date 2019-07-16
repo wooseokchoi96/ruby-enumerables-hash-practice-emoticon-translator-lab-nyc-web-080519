@@ -18,7 +18,7 @@ def get_japanese_emoticon(file_name, emoticon)
   if !translator["get_emoticon"][emoticon].nil?
     translator["get_emoticon"][emoticon]
   else
-    "Sorry, that emoticon is not recognized."
+    "Sorry, that emoticon was not found"
   end
 end
 
