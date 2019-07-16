@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(file_name)
   # code goes here
-  emotes = YAML.load_file(file_name)
+  library = YAML.load_file(file_name)
   emotes.each{ |word, pic|
     pic.each{ |eng, jap|
       new_emotes = {
