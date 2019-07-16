@@ -25,6 +25,9 @@ end
 def get_english_meaning(file_name, emoticon)
   # code goes here
   translator = load_library(file_name)
-  
-  
+  if !translator["get_meaning"][emoticon].nil?
+    translator["get_meaning"][emoticon]
+  else
+    "Sorry, that emoticon was not found"
+  end
 end
